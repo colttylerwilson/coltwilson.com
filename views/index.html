@@ -12,7 +12,6 @@
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="website.js"></script>
   <style>
     .navbar {
       background-color: #ffffff;
@@ -103,7 +102,15 @@
     .img-circle-icon {
       height: 50%;
       width: 50%;
+      background-color: transparent;
     }
+
+    .img-circle-icon-conway {
+      height: 47%;
+      width: 47%;
+      background-color: transparent;
+    }
+
   </style>
 </head>
 
@@ -122,17 +129,17 @@
   </div>
   <!-- End Navigation Bar -->
   <!-- Begin Header -->
-    <div id="header-wrapper">
-      <div id="header" class="container-fluid">
-        <div id="logo">
-          <h1>ColtWilson</h1>
-          <span>A person in SPACE</a></span>
-          <div class="container-fluid">
-            <img src="images/profilePhotoCroppedMedium.jpeg" class="img-circle" alt="ProfilePhoto">
-          </div>
+  <div id="header-wrapper">
+    <div id="header" class="container-fluid">
+      <div id="logo">
+        <h1>ColtWilson</h1>
+        <span>A person in SPACE</a></span>
+        <div class="container-fluid">
+          <img src="images/profilePhotoCroppedMedium.jpeg" class="img-circle" alt="ProfilePhoto"/>
         </div>
       </div>
     </div>
+  </div>
   <!-- END Header -->
   <!-- Begin Projects -->
   <div id="wrapper2">
@@ -140,22 +147,28 @@
       <div id="tbox1">
         <div class="container-fluid">
           <a href="https://github.com/colttylerwilson" target="_blank">
-          <img src="images/github-icon.png" class="img-circle-icon" alt="GitHub Icon">
+            <img src="images/github-icon.png" class="img-circle-icon" alt="GitHub Icon"/>
           </a>
+          <div id="title">
+            <h2 id="Projects">GitHub Profile</h2>
+          </div>
+          <p></p>
         </div>
-        <div id="title">
-          <h2 id="Projects">GitHub Profile</h2>
-        </div>
-        <p></p>
       </div>
       <div id="tbox2">
-        <div id="title">
-          <h2>Drunkard Walk</h2>
+        <div class="container-fluid">
+          <img src="images/conways-icon.png" class="img-circle-icon-conway" alt="Conway's Icon"/>
+          <div id="title">
+            <h2>Conway's GOL</h2>
+          </div>
         </div>
       </div>
       <div id="tbox3">
-        <div id="title">
-          <h2>Conway's GOL</h2>
+        <div class="container-fluid">
+          <img src="images/bubbles-icon.png" class="img-circle-icon" alt="Bubbles Icon"/>
+          <div id="title">
+            <h2>Drunkard Walk</h2>
+          </div>
         </div>
       </div>
       <span class="stretch"></span>
