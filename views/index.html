@@ -9,82 +9,157 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="website.js"></script>
   <style>
-    .background-test {
-      background-color: #e24e42;
-      color: #008f95;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 48px;
-    }
-
-    .background-0 {
-      background-color: #ffffff;
-      color: #008f95;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 48px;
-    }
-
     .navbar {
       background-color: #ffffff;
-      border-color: #008f95;
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    .background-1 {
-      background-color: #eb6e80;
-      color: #008f95;
-    }
-
-    .background-2 {
-      background-color: #008f95;
-      color: #eb6e80;
+      border-color: black;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      padding-left: 130px;
     }
 
     body {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
       padding-top: 50px;
+    }
+
+    #logo h1 {
+      font-size: 3.5em;
+      font-weight: bold;
+    }
+
+    #logo {
+      text-align: center;
+    }
+
+    #logo span {
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      font-size: 0.90em;
+    }
+
+    #header-wrapper {
+      overflow: hidden;
+      padding: 5em 0em;
+      border: black;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+    }
+
+    #wrapper2 {
+      overflow: hidden;
+      padding: 0em 0em 8em 0em;
+    }
+
+    #project-column {
+      overflow: hidden;
+      padding-bottom: 6em;
+      text-align: center;
+    }
+
+    .container-fluid {
+      margin: 0px auto;
+    }
+
+    #project-column #tbox1,
+    #project-column #tbox2,
+    #project-column #tbox3 {
+      text-align: center;
+      padding: 80px 40px 80px 40px;
+      width: 375px;
+      height: 125px;
+      vertical-align: top;
+      display: inline-block;
+      *display: inline;
+      zoom: 1
+    }
+
+    #project-column h2 {
+      font-weight: 900;
+      font-family: 'Open Sans', sans-serif;
+      margin: 1em 0em;
+      text-transform: uppercase;
+      font-size: 1.85em;
+      font-weight: 700;
+    }
+
+    .stretch {
+      width: 100%;
+      display: inline-block;
+      font-size: 0;
+      line-height: 0
+    }
+
+    icon {
+      height: 50%;
+      width: 50%;
+    }
+
+    .img-circle-icon {
+      height: 50%;
+      width: 50%;
     }
   </style>
 </head>
 
 <body>
+  <!-- Top Navigation Bar -->
   <div>
-    <div>
-      <!-- Top Navigation Bar -->
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="padding-left:130px;">
-        <div class="container">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/contact">Contact Me</a></li>
-          </ul>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Top Navigation Bar -->
+  <div id="header-wrapper">
+    <div id="header" class="container-fluid">
+      <div id="logo">
+        <h1>ColtWilson</h1>
+        <span>A person in SPACE</a></span>
+        <div class="container-fluid">
+            <img src="images/profilePhotoCroppedMedium.jpeg" class="img-circle" alt="ProfilePhoto">
         </div>
-      </nav>
-    </div>
-    <!--<br/>-->
-    <div class="background-0 container-fluid text-center">
-      <div class="container-fluid">
-        <h3>Who Am I?</h3>
-        <img src="images/profilePhotoCroppedMedium.jpeg" class="img-circle" alt="ProfilePhoto">
-        <h3>I'm a Person</h3>
       </div>
     </div>
-    <div class="container-fluid background-1 text-center">
-      <h3>What Am I?</h3>
-      <p>Lorem ipsum..</p>
-    </div>
-    <div class="container-fluid background-2 text-center">
-      <h3>What Am I?</h3>
-      <p>Lorem ipsum..</p>
-    </div>
-    <div class="jumbotron">
-      <p>
-        This is place to put your Sample Content.
-      </p>
+  </div>
+
+  <div id=wrapper2>
+    <div id="project-column" class="container-fluid">
+      <div id="tbox1">
+        <div class="container-fluid">
+          <a href="https://github.com/colttylerwilson" target="_blank">
+          <img src="images/github-icon.png" class="img-circle-icon" alt="GitHub Icon">
+          </a>
+        </div>
+        <div id="title">
+          <h2>GitHub Profile</h2>
+        </div>
+        <p></p>
+      </div>
+      <div id="tbox2">
+        <div id="title">
+          <h2>Drunkard Walk</h2>
+        </div>
+      </div>
+      <div id="tbox3">
+        <div id="title">
+          <h2>Conway's GOL</h2>
+        </div>
+      </div>
+      <span class="stretch"></span>
     </div>
   </div>
+
 </body>
 
 </html>
