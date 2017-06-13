@@ -52,7 +52,7 @@
 
     #wrapper2 {
       overflow: hidden;
-      padding: 0em 0em 8em 0em;
+      padding: 0em 0em 0em 0em;
     }
 
     #project-column {
@@ -69,13 +69,11 @@
     #project-column #tbox2,
     #project-column #tbox3 {
       text-align: center;
-      padding: 80px 40px 80px 40px;
+      padding: 80px 40px 410px 40px;
       width: 375px;
       height: 125px;
       vertical-align: top;
       display: inline-block;
-      *display: inline;
-      zoom: 1
     }
 
     #project-column h2 {
@@ -85,13 +83,6 @@
       text-transform: uppercase;
       font-size: 1.85em;
       font-weight: 700;
-    }
-
-    .stretch {
-      width: 100%;
-      display: inline-block;
-      font-size: 0;
-      line-height: 0
     }
 
     icon {
@@ -106,11 +97,24 @@
     }
 
     .img-circle-icon-conway {
-      height: 47%;
-      width: 47%;
+      height: 50%;
+      width: 50%;
       background-color: transparent;
     }
 
+    .button {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 1em 2em 1em 2em;
+      background: black;
+      letter-spacing: 0.20em;
+      line-height: 1.8em;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1.2em;
+      color: #FFF;
+    }
   </style>
 </head>
 
@@ -135,7 +139,7 @@
         <h1>ColtWilson</h1>
         <span>A person in SPACE</a></span>
         <div class="container-fluid">
-          <img src="images/profilePhotoCroppedMedium.jpeg" class="img-circle" alt="ProfilePhoto"/>
+          <img src="images/profilePhotoCroppedMedium.jpeg" class="img-circle" alt="ProfilePhoto" />
         </div>
       </div>
     </div>
@@ -152,26 +156,36 @@
           <div id="title">
             <h2 id="Projects">GitHub Profile</h2>
           </div>
-          <p></p>
+          <p>This is where my most recent projects are located. I have one Java project (may add more later), a couple Javascript
+            art projects on Canvas, and the source code for this very website.</p>
+          <a class="button" target="_blank" href="https://github.com/colttylerwilson">View Profile</a>
         </div>
       </div>
       <div id="tbox2">
         <div class="container-fluid">
-          <img src="images/conways-icon.png" class="img-circle-icon-conway" alt="Conway's Icon"/>
+          <img src="images/conways-icon.png" class="img-circle-icon-conway" alt="Conway's Icon" />
           <div id="title">
             <h2>Conway's GOL</h2>
           </div>
+          <p>Randomized Conway's Game of Life, now in color!</p>
+          </br>
+          </br>
+          </br>
+          <a class="button" target="_blank" href="https://github.com/colttylerwilson">View Project</a>
         </div>
       </div>
       <div id="tbox3">
         <div class="container-fluid">
-          <img src="images/bubbles-icon.png" class="img-circle-icon" alt="Bubbles Icon"/>
+          <img src="images/bubbles-icon.png" class="img-circle-icon" alt="Bubbles Icon" />
           <div id="title">
             <h2>Drunkard Walk</h2>
           </div>
+          <p>What I consider computer art. Circles swimming across Canvas using the drunkard walk algorithm.</p>
+          </br>
+          </br>
+          <a class="button" target="_blank" href="https://github.com/colttylerwilson">View Project</a>
         </div>
       </div>
-      <span class="stretch"></span>
     </div>
   </div>
   <!-- END Projects -->
