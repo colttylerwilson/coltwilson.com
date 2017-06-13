@@ -52,6 +52,9 @@
 
     #wrapper2 {
       overflow: hidden;
+      border: black;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
       padding: 0em 0em 0em 0em;
     }
 
@@ -76,13 +79,15 @@
       display: inline-block;
     }
 
-    #project-column h2 {
+    #project-column h2,
+    #footer h2 {
       font-weight: 900;
       font-family: 'Open Sans', sans-serif;
       margin: 1em 0em;
       text-transform: uppercase;
       font-size: 1.85em;
       font-weight: 700;
+      color: #333;
     }
 
     icon {
@@ -115,6 +120,32 @@
       font-size: 1.2em;
       color: #FFF;
     }
+
+    #wrapper3 {
+      overflow: hidden;
+      text-align: center;
+      color: #333;
+    }
+
+    #footer {
+      text-align: center;
+      padding: 5em 10em 10em 10em;
+      font-weight: bold;
+    }
+
+    #footer span {
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      font-size: 1em;
+    }
+
+    #footer .title {
+      padding: 0em 0em 6em 0em;
+    }
+
+    #contactInfo {
+      padding: 0em 0em 6em 0em;
+    }
   </style>
 </head>
 
@@ -126,7 +157,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#header-wrapper">Home<span class="sr-only">(current)</span></a></li>
           <li><a href="#wrapper2">Projects</a></li>
-          <li><a href="#Contact">Contact Me</a></li>
+          <li><a href="#footer">Contact Me</a></li>
         </ul>
       </div>
     </nav>
@@ -189,6 +220,23 @@
     </div>
   </div>
   <!-- END Projects -->
+  <!-- Begin Contact -->
+  <div id="wrapper3">
+    <div id="footer" class="container-fluid">
+      <div class="title">
+        <h2>Contact Information</h2>
+      </div>
+      <div id="contactInfo" class="container-fluid">
+        <span>Colt Tyler Wilson</span></br>
+        </br>
+        <span>colt.wilson@sjsu.edu</span></br>
+        </br>
+        <span>714-987-1090</span></br>
+        </br>
+      </div>
+    </div>
+  </div>
+  <!-- END Contact -->
 </body>
 
 </html>
