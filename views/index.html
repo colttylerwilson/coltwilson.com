@@ -12,6 +12,7 @@
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <style>
     .navbar {
       background-color: #ffffff;
@@ -21,10 +22,13 @@
       padding-left: 130px;
     }
 
+    ul.nav a:hover { color: black !important; }
+
     body {
       font-family: 'Source Sans Pro', sans-serif;
       font-weight: 400;
       padding-top: 50px;
+      position: relative;
     }
 
     #logo h1 {
@@ -149,13 +153,13 @@
   </style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!-- Navigation Bar -->
   <div>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#header-wrapper">Home<span class="sr-only">(current)</span></a></li>
+          <li><a href="#header-wrapper">Home</a></li>
           <li><a href="#wrapper2">Projects</a></li>
           <li><a href="#footer">Contact Me</a></li>
         </ul>
