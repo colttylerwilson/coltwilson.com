@@ -19,10 +19,12 @@
       border-color: black;
       letter-spacing: 0.10em;
       text-transform: uppercase;
-      padding-left: 130px;
+      padding-left: 10px;
     }
 
-    ul.nav a:hover { color: black !important; }
+    ul.nav a:hover {
+      color: black !important;
+    }
 
     body {
       font-family: 'Source Sans Pro', sans-serif;
@@ -150,6 +152,33 @@
     #contactInfo {
       padding: 0em 0em 6em 0em;
     }
+
+    #planet1 {
+      width: 20px;
+      height: 20px;
+      background: green;
+      position: fixed;
+    }
+
+    #planet2 {
+      width: 20px;
+      height: 20px;
+      background: purple;
+      position: fixed;
+    }
+
+    #planet3 {
+      width: 20px;
+      height: 20px;
+      background: yellow;
+      position: fixed;
+    }
+
+    .circle {
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 20px;
+    }
   </style>
 </head>
 
@@ -167,6 +196,12 @@
     </nav>
   </div>
   <!-- End Navigation Bar -->
+
+  <div id="container">
+    <div id="animate"></div>
+  </div>
+
+
   <!-- Begin Header -->
   <div id="header-wrapper">
     <div id="header" class="container-fluid">
@@ -174,6 +209,12 @@
         <h1>ColtWilson</h1>
         <span>A person in SPACE</a></span>
         <div class="container-fluid">
+          <p>
+            <!--  <button onclick="myMove()">Click Me</button>  -->
+          </p>
+          <!-- <div id="planet1" class="circle"></div> -->
+          <!-- <div id="planet2" class="circle"></div> -->
+          <!-- <div id="planet3" class="circle"></div> -->
           <img src="images/profilePhotoCroppedMedium.jpeg" class="img-circle" alt="ProfilePhoto" />
         </div>
       </div>
