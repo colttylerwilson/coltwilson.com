@@ -1,0 +1,295 @@
+
+
+<!doctype html>
+<script>$.ajax({
+    url: '/test',
+    complete: function(data) {
+      console.log(data);
+      console.log("hello my firned");
+    }
+  });</script>
+<html lang="en">
+<head>
+  <!--Used for Google font Open Sans-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Colt Tyler Wilson</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    .navbar {
+      background-color: #ffffff;
+      border-color: black;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      padding-left: 10px;
+    }
+
+    ul.nav a:hover {
+      color: black !important;
+    }
+
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 400;
+      padding-top: 50px;
+      position: relative;
+    }
+
+    #logo h1 {
+      font-size: 3.5em;
+      font-weight: bold;
+    }
+
+    #logo {
+      text-align: center;
+    }
+
+    #logo span {
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      font-size: 0.90em;
+    }
+
+    #header-wrapper {
+      overflow: hidden;
+      padding: 5em 0em;
+      border: black;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+    }
+
+    #wrapper2 {
+      overflow: hidden;
+      border: black;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      padding: 0em 0em 0em 0em;
+    }
+
+    #project-column {
+      overflow: hidden;
+      padding-bottom: 6em;
+      text-align: center;
+    }
+
+    .container-fluid {
+      margin: 0px auto;
+    }
+
+    #project-column #tbox1,
+    #project-column #tbox2,
+    #project-column #tbox3 {
+      text-align: center;
+      padding: 80px 40px 410px 40px;
+      width: 375px;
+      height: 125px;
+      vertical-align: top;
+      display: inline-block;
+    }
+
+    #project-column h2,
+    #footer h2 {
+      font-weight: 900;
+      font-family: 'Open Sans', sans-serif;
+      margin: 1em 0em;
+      text-transform: uppercase;
+      font-size: 1.85em;
+      font-weight: 700;
+      color: #333;
+    }
+
+    icon {
+      height: 50%;
+      width: 50%;
+    }
+
+    .img-circle-icon {
+      height: 50%;
+      width: 50%;
+      background-color: transparent;
+    }
+
+    .img-circle-icon-conway {
+      height: 50%;
+      width: 50%;
+      background-color: transparent;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 1em 2em 1em 2em;
+      background: black;
+      letter-spacing: 0.20em;
+      line-height: 1.8em;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1.2em;
+      color: #FFF;
+    }
+
+    #wrapper3 {
+      overflow: hidden;
+      text-align: center;
+      color: #333;
+    }
+
+    #footer {
+      text-align: center;
+      padding: 5em 10em 10em 10em;
+      font-weight: bold;
+    }
+
+    #footer span {
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      font-size: 1em;
+    }
+
+    #footer .title {
+      padding: 0em 0em 6em 0em;
+    }
+
+    #contactInfo {
+      padding: 0em 0em 6em 0em;
+    }
+
+    #planet1 {
+      width: 20px;
+      height: 20px;
+      background: green;
+      position: fixed;
+    }
+
+    #planet2 {
+      width: 20px;
+      height: 20px;
+      background: purple;
+      position: fixed;
+    }
+
+    #planet3 {
+      width: 20px;
+      height: 20px;
+      background: yellow;
+      position: fixed;
+    }
+
+    .circle {
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- Navigation Bar -->
+  <div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="#header-wrapper">Home</a></li>
+          <li><a href="#wrapper2">Projects</a></li>
+          <li><a href="#footer">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- End Navigation Bar -->
+
+  <div id="container">
+    <div id="animate"></div>
+  </div>
+
+
+  <!-- Begin Header -->
+  <div id="header-wrapper">
+    <div id="header" class="container-fluid">
+      <div id="logo">
+        <h1>ColtWilson</h1>
+        <span>A person in SPACE</a></span>
+        <div class="container-fluid">
+          <p>
+            <!--  <button onclick="myMove()">Click Me</button>  -->
+          </p>
+          <!-- <div id="planet1" class="circle"></div> -->
+          <!-- <div id="planet2" class="circle"></div> -->
+          <!-- <div id="planet3" class="circle"></div> -->
+          <img src="images/profilePhotoCroppedMedium.jpeg" class="img-circle" alt="ProfilePhoto" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Header -->
+  <!-- Begin Projects -->
+  <div id="wrapper2">
+    <div id="project-column" class="container-fluid"><a name="Projects"></a>
+      <div id="tbox1">
+        <div class="container-fluid">
+          <a href="https://github.com/colttylerwilson" target="_blank">
+            <img src="images/github-icon.png" class="img-circle-icon" alt="GitHub Icon"/>
+          </a>
+          <div id="title">
+            <h2 id="Projects">GitHub Profile</h2>
+          </div>
+          <p>This is where my most recent projects are located. I have one Java project (may add more later), a couple Javascript
+            art projects on Canvas, and the source code for this very website.</p>
+          <a class="button" target="_blank" href="https://github.com/colttylerwilson">View Profile</a>
+        </div>
+      </div>
+      <div id="tbox2">
+        <div class="container-fluid">
+          <img src="images/conways-icon.png" class="img-circle-icon-conway" alt="Conway's Icon" />
+          <div id="title">
+            <h2>Conway's GOL</h2>
+          </div>
+          <p>Randomized Conway's Game of Life, now in color!</p>
+          </br>
+          </br>
+          </br>
+          <a class="button" target="_blank" href="https://github.com/colttylerwilson">View Project</a>
+        </div>
+      </div>
+      <div id="tbox3">
+        <div class="container-fluid">
+          <img src="images/bubbles-icon.png" class="img-circle-icon" alt="Bubbles Icon" />
+          <div id="title">
+            <h2>Drunkard Walk</h2>
+          </div>
+          <p>What I consider computer art. Circles swimming across Canvas using the drunkard walk algorithm.</p>
+          </br>
+          </br>
+          <a class="button" target="_blank" href="https://github.com/colttylerwilson">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END Projects -->
+  <!-- Begin Contact -->
+  <div id="wrapper3">
+    <div id="footer" class="container-fluid">
+      <div class="title">
+        <h2>Contact Information</h2>
+      </div>
+      <div id="contactInfo" class="container-fluid">
+        <span>Colt Tyler Wilson</span></br>
+        </br>
+        <span>colt.t.wilon@gmail.com</span></br>
+        </br>
+        <span>714-987-1090</span></br>
+        </br>
+      </div>
+    </div>
+  </div>
+  <!-- END Contact -->
+</body>
+
+</html>
